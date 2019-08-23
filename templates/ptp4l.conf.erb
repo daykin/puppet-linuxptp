@@ -1,0 +1,79 @@
+#linuxptp configuration file
+#Managed by puppet -- DO NOT EDIT
+[<%= @real_interface =%>]
+#Port options
+delayAsymmetry = <%= @delay_asymmetry =>
+logAnnounceInterval = <%= @log_announce_interval =>
+logSyncInterval = <%= @log_sync_interval =>
+logMinDelayReqInterval = <%= @log_min_delay_req_interval =>
+logMinPdelayReqInterval = <%= @log_min_pdelay_req_interval =>
+announceReceiptTimeout = <%= @announce_receipt_timeout =>
+syncReceiptTimeout = <%= @sync_receipt_timeout =>
+transportSpecific = <%= @transport_specific =>
+ignore_transport_specific = <%= @ignore_transport_specific =>
+path_trace_enabled = <%= @path_trace_enabled =>
+follow_up_info = <%= @follow_up_info =>
+fault_reset_interval = <%= @fault_reset_interval =>
+fault_badpeernet_interval = <%= @fault_badpeernet_interval =>
+delay_mechanism = <%= @delay_mechanism =>
+hybrid_e2e = <%= @hybrid_e2e =>
+net_sync_monitor = <%= @net_sync_monitor =>
+network_transport = <%= @network_transport =>
+neighborPropDelayThresh = <%= @neighbor_prop_delay_thresh =>
+min_neighbor_prop_delay = <%= @min_neighbor_prop_delay =>
+tsproc_mode = <%= @tsproc_mode =>
+delay_filter = <%= @delay_filter =>
+delay_filter_length = <%= @delay_filter_length =>
+egressLatency = <%= @egress_latency =>
+ingressLatency = <%= @ingress_latency =>
+boundary_clock_jbod = <%= @boundary_clock_jbod =>
+udpTtl = <%= @udp_ttl =>
+twoStepFlag = <%= @two_step_flag =>
+slaveOnly= <%= @slave_only =>
+priority1 = <%= @priority1 =>
+priority2 = <%= @priority2 =>
+clockClass = <%= @clock_class =>
+clockAccuracy = <%= @clock_accuracy =>
+offsetScaledLogVariance = <%= @offset_scaled_log_variance =>
+domainNumber = <%= @domain_number =>
+utc_offset= <%= @utc_offset =>
+free_running = <%= @free_running =>
+freq_est_interval = <%= @freq_est_interval =>
+assume_two_step = <%= @assume_two_step =>
+tx_timestamp_timeout = <%= @tx_timestamp_timeout =>
+tx_timestamp_retries = <%= @tx_timestamp_retries =>
+check_fup_sync = <%= @check_fup_sync =>
+clock_servo = <%= @clock_servo =>
+pi_proportional_const = <%= @pi_proportional_const =>
+pi_integral_const = <%= @pi_integral_const =>
+pi_proportional_scale = <%= @pi_proportional_scale =>
+pi_proportional_exponent = <%= @pi_proportional_exp =>
+pi_proportional_norm_max = <%= @pi_proportional_norm_max =>
+pi_integral_scale = <%= @pi_integral_scale =>
+pi_integral_exponent = <%= @pi_integral_exponent =>
+pi_integral_norm_mask = <%= @pi_integral_norm_mask =>
+step_threshold = <%= @step_threshold =>
+first_step_threshold = <%= @first_step_threshold =>
+max_frequency = <%= @max_frequency =>
+sanity_freq_limit = <%= @sanity_freq_limit =>
+initial_delay = <%= @initial_delay =>
+ntpshm_segment = <%= @ntpshm_segment =>
+udp6_scope= <%= @udp6_scope =>
+uds_address = <%= @uds_address =>
+dscp_event= <%= @dscp_event =>
+dscp_general = <%= @dscp_general =>
+message_tag = <%= @message_tag =>
+verbose = <%= @verbose =>
+summary_interval= <%= @summary_interval =>
+productDescription = <%= @product_description =>
+revisionData = <%= @revision_data =>
+userDescription= <%= @user_description =>
+manufacturerIdentity = <%= @manufacturer_identity =>
+kernel_leap = <%= @kernel_leap =>
+ptp_dst_mac = <%= @ptp_dst_mac =>
+p2p_dst_mac = <%= @p2p_dst_mac =>
+logging_level = <%= @logging_level =>
+use_syslog= <%= @use_syslog =>
+timeStamping = <%= @time_stamping =>
+logStatistics = <%= @log_statistics =>
+
